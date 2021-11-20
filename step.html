@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <style>
+      #task {
+          background-color: rgb(255, 0, 119);
+          padding: 30px 20px;
+          width: 300px;
+          height: 100vh;
+          margin-top: 60px;
+          border-bottom: 2px solid red;
+          cursor: pointer;
+      }
+      .task {
+          background-color: burlywood;
+          height: 50px;
+          padding: 5px 10px;
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between; 
+          cursor: pointer;
+      }
+      .completed {
+          text-decoration: line-through;
+          color: rgb(13, 0, 128);
+      }
+
+      .task span {
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           font-weight: 400px;
+           font-size: 15px;
+      }
+      .taskname {
+          background-color: chartreuse;
+          color: #ffff;
+          height: 100%;
+          width: 40px;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer; 
+          outline: none;
+      }
+  </style>
+  <!-- ============================================================== -->
+<body>
+    <div class="container">
+        <div id="newtask">
+            <input type="text" placeholder="task to be done">
+            <input type="text" placeholder="task to be done">
+            <button id="push">Add</button>
+            <div id="task"></div>
+            <div id="task"></div>
+        </div>
+    </div>
+    <!-- ========================================================= -->
+    <script src="step.js">
+       
+    </script>
+</body>
+</html>
